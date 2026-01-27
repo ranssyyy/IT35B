@@ -9,12 +9,16 @@
 
 <body>
 
-      <div class="container">
-        <h1 style="margin-left: 6.5rem;">TO DO LIST</h1>
-        <h2>Name</h2>
-    <input class="Input" type="text" id="nameInput" placeholder="Enter name" style="border-radius: 5px;">
-    <button class="Enter" onclick="Enter()">Enter</button>
-    <button class="Add" onclick="Add()">Add</button>
+      <div class="container-fluid"  style="max-width: 40%;">
+        <h2 class="text-center">To-Do List</h2>
+        <div class="input-group mb-4">
+            <textarea class="form-control" id="todoInput" placeholder="Add a new task"  rows="3"></textarea>
+            <div class="input-group-append" style="margin-left: .5rem;">
+                <button class="btn btn-primary" id="addButton">Add</button>
+            </div>
+        </div>
+        <ul id="todoList" class="list-group"></ul>
+    </div>
 
     
 
@@ -22,4 +26,5 @@
 
 
 <script src="script.js"></script>
+<link rel="stylesheet" href="style.css">
 </html>

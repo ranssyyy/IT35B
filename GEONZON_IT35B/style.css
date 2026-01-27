@@ -1,0 +1,61 @@
+
+.container-fluid {
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+h2 {
+    margin-bottom: 1.5rem;
+    font-family: 'Arial', sans-serif;
+    color: #343a40;
+}
+
+
+#todoInput {
+    resize: none;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+
+#addButton {
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#addButton:hover {
+    background-color: #0056b3;
+}
+
+
+#todoList {
+    margin-top: 1rem;
+}
+
+#todoList li {
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.5rem;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #dee2e6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+}
+
+#todoList li.completed {
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+
+    
