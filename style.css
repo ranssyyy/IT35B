@@ -1,30 +1,30 @@
 
-body{
-margin: 40px;
-display:flex;
-justify-content:center;   
-align-items:flex-start;   
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #2b6c2f; 
+    font-family: 'Arial', sans-serif;
 }
 
 
 .container-fluid {
     margin-top: 20px;
     text-align: center;
-    margin: auto;
-    padding: 1rem;
-    background-color: rgb(180, 176, 176);
-    width: 800px; 
+    padding: 1.5rem;
+    background-color: #ffffff; 
+    width: 800px;
+    max-width: 95%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.input-group{
-justify-content:center;
-}
 
-
-
-h2 {
-    font-family: 'Arial', sans-serif;
+h2, h3 {
     color: #343a40;
+    margin-bottom: 1rem;
 }
 
 
@@ -36,24 +36,43 @@ h2 {
     padding: 0.5rem;
     font-size: 1rem;
     width: 300px;
+    margin-bottom: 10px;
 }
 
 
-#addButton {
+#addButton, button.change-btn {
     border-radius: 5px;
     padding: 0.5rem 1rem;
     font-size: 1rem;
     transition: background-color 0.3s ease;
+    cursor: pointer;
+    margin: 0 5px;
 }
 
+
+#addButton {
+    background-color: #198754; 
+    color: #fff;
+}
 #addButton:hover {
-    background-color: rgb(4, 255, 4);
+    background-color: #2835a7;
 }
 
 
+button.change-btn {
+    background-color: #fd7e14; 
+    color: #fff;
+}
+button.change-btn:hover {
+    background-color: #bc0ce8;
+}
+
+/*TASK LIST*/
 #todoList {
     margin-top: 1rem;
+    text-align: left;
 }
+
 
 #todoList li {
     padding: 0.75rem 1rem;
@@ -67,10 +86,78 @@ h2 {
     font-size: 1rem;
 }
 
+
 #todoList li.completed {
     text-decoration: line-through;
     color: #6c757d;
 }
 
 
-    
+.doneButton {
+    background-color: #0d6efd;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.25rem 0.5rem;
+}
+.doneButton:hover {
+    background-color: #0b5ed7;
+}
+
+.editButton {
+    background-color: #ffc107; 
+    color: #212529;
+    border: none;
+    border-radius: 5px;
+    padding: 0.25rem 0.5rem;
+}
+.editButton:hover {
+    background-color: #e0a800;
+}
+
+.removeButton {
+    background-color: #dc3545; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.25rem 0.5rem;
+}
+.removeButton:hover {
+    background-color: #bb2d3b;
+}
+
+/*ACTIVITY LOGS*/
+#logs {
+    list-style: none; 
+    background-color: #627960; 
+    color: #f8f9fa; 
+    border-radius: 4px;
+    padding: 4px;
+    font-size: 14px;
+    font-weight: bold; 
+    text-align: center; 
+    margin-top: 1rem;
+    max-height: 200px;
+    overflow-y: auto; 
+}
+
+
+#logs li {
+    margin-bottom: 5px;
+    padding: 8px;
+    background-color: #495057; 
+    border-radius: 4px;
+}
+
+ul {
+    list-style: none;
+    text-align: left;
+    padding: 10px;
+}
+
+.task-text.completed,
+.task-left.completed {
+    text-decoration: line-through; 
+    color: #6c757d; 
+}
+

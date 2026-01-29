@@ -8,20 +8,28 @@
 
 
 <body>
-
+      <!-- MAIN CONTAINER-->
       <div class="container-fluid">
         <h2 class="text-center">To-Do List</h2>
+
+        <!--INPUT AREA-->        
         <div class="input-group mb-4">
             <textarea class="form-control" id="todoInput" placeholder="Add a new task"  rows="3"></textarea>
             <div class="input-group-append">
+                
+                <!--BUTTONS-->
                 <button class="btn btn-primary" id="addButton">Add</button>
+                <button class="change-btn" onclick="changeUser()">Change User</button>
             </div>
-        </div>
-        <ul id="todoList" class="list-group"></ul>
+
+                <!--TASKLIST-->
+                <ul id="todoList" class="list-group">Task List</ul>
+
+                <!--ACTIVITY LOGS-->
+                <h3>Activity Logs</h3>
+                <ul id="logs" class="logs"></ul>
+        
     </div>
-
-    
-
 </body>
 
 
