@@ -5,7 +5,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    background-color: #2b6c2f; 
+    background-color: #153f18; 
     font-family: 'Arial', sans-serif;
 }
 
@@ -64,7 +64,7 @@ button.change-btn {
     color: #fff;
 }
 button.change-btn:hover {
-    background-color: #bc0ce8;
+    background-color: #0ca2e8;
 }
 
 /*TASK LIST*/
